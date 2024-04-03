@@ -1,5 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
-import App from "../App";
+import HomePage from "./HomePage";
 import Portfolio from "./Portfolio";
 import ContactForm from "./ContactForm";
 
@@ -13,7 +13,7 @@ export default function Header() {
         <Link to="/contact">Contact</Link>
 
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
