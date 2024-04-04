@@ -6,9 +6,7 @@ import ContactForm from "./ContactForm";
 import MobileHeader from "./MobileHeader";
 
 export default function Header() {
-  // Insert conditional rendering for different menus based on screen size
   const [width, setWidth] = useState(window.innerWidth);
-
   const breakpoint = 640;
 
   useEffect(() => {

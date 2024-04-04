@@ -45,7 +45,7 @@ export default function MobileHeader() {
             </ul>
           </div>
         </div>
-        <div className="navbar-center">
+        <div className="navbar-end">
           <Link to="/" className="btn btn-ghost text-xl">
             Loren Rivers
           </Link>
