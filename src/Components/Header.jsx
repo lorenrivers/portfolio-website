@@ -25,11 +25,17 @@ export default function Header() {
   return (
     <div>
       <div className="flex justify-between">
-        <h1>Loren Rivers</h1>
+        <h1 className="font-playfair-display">Loren Rivers</h1>
         <nav className="flex gap-3">
-          <Link to="/">Home</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/">
+            <span className="font-playfair-display">Home</span>
+          </Link>
+          <Link to="/portfolio">
+            <span className="font-playfair-display">Portfolio</span>
+          </Link>
+          <Link to="/contact">
+            <span className="font-playfair-display">Contact</span>
+          </Link>
         </nav>
       </div>
       <Routes>

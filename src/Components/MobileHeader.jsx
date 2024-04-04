@@ -34,19 +34,25 @@ export default function MobileHeader() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/">
+                  <span className="font-roboto">Home</span>
+                </Link>
               </li>
               <li>
-                <Link to="/portfolio">Portfolio</Link>
+                <Link to="/portfolio">
+                  <span className="font-roboto">Portfolio</span>
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact">
+                  <span className="font-roboto">Contact</span>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="navbar-end">
-          <Link to="/" className="btn btn-ghost text-xl">
+          <Link to="/" className="btn btn-ghost text-xl font-roboto">
             Loren Rivers
           </Link>
         </div>
