@@ -1,35 +1,72 @@
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useState } from "react";
 
 export default function ContactForm() {
-  const form = useRef();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
+    const serviceId = "service_h3lj3rk";
+    const templateId = "template_1nalism";
+    const publicKey = "pReQoce0qBNkPR37-";
+
+    const templateParams = {
+      user_name: name,
+      user_email: email,
+      message: message,
+    };
+
     emailjs
-      .sendForm("service_h3lj3rk", "template_1nalism", form.current, {
-        publicKey: "pReQoce0qBNkPR37-",
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent succesfully.", response);
+        setName("");
+        setEmail("");
+        setMessage("");
       })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" placeholder="Your Name" required />
-      <label>Email</label>
-      <input type="email" name="user_email" placeholder="Your Email" required />
-      <label>Message</label>
-      <textarea name="message" placeholder="Message" required />
-      <button type="submit">Submit</button>
+    <form onSubmit={handleSubmit} className="flex flex-col px-10 py-5">
+      <input
+        type="text"
+        placeholder="Your Name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        className="bg-indigo-50 p-2 rounded-xl m-1"
+        required
+      />
+      <input
+        type="email"
+        placeholder="Your Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        className="bg-indigo-50 p-2 rounded-xl m-1"
+        required
+      />
+
+      <textarea
+        rows="5"
+        cols="40"
+        type="text"
+        placeholder="Message"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+        className="bg-indigo-50 p-2 rounded-xl m-1"
+        required
+      />
+      <button
+        type="submit"
+        className="bg-indigo-950 text-white p-4 w-fit self-center rounded-xl m-2 hover:bg-indigo-950/75"
+      >
+        Submit
+      </button>
     </form>
   );
 }

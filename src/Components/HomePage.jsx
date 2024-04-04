@@ -38,6 +38,12 @@ export default function HomePage() {
       <section>{/* Project Overview Section */}</section>
 
       <section>
+        {/* Contact Section */}
+        <h2 className="px-10 pt-10">Contact Me</h2>
+        <p className="px-10 py-5">
+          I&apos;m happy to hear any feedback on my projects, or open to
+          collaboration on work. Drop me a message below to chat!
+        </p>
         <ContactForm />
       </section>
     </div>
