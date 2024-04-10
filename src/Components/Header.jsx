@@ -23,18 +23,24 @@ export default function Header() {
   }
 
   return (
-    <div>
-      <div className="flex justify-between">
-        <h1 className="font-playfair-display">Loren Rivers</h1>
-        <nav className="flex gap-3">
+    <header>
+      <div className="flex justify-between p-10">
+        <h1 className="font-roboto font-bold text-xl">Loren Rivers</h1>
+        <nav className="flex gap-5">
           <Link to="/">
-            <span className="font-playfair-display">Home</span>
+            <span className="font-roboto font-bold text-xl underline decoration-transparent hover:decoration-indigo-700 hover:text-indigo-700 hover:transition-colors hover:duration-300">
+              Home
+            </span>
           </Link>
           <Link to="/portfolio">
-            <span className="font-playfair-display">Portfolio</span>
+            <span className="font-roboto font-bold text-xl underline decoration-transparent hover:decoration-indigo-700 hover:text-indigo-700 hover:transition-colors hover:duration-300">
+              Portfolio
+            </span>
           </Link>
           <Link to="/contact">
-            <span className="font-playfair-display">Contact</span>
+            <span className="font-roboto font-bold text-xl underline decoration-transparent hover:decoration-indigo-700 hover:text-indigo-700 hover:transition-colors hover:duration-300">
+              Contact
+            </span>
           </Link>
         </nav>
       </div>
@@ -43,6 +49,6 @@ export default function Header() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<ContactForm />} />
       </Routes>
-    </div>
+    </header>
   );
 }

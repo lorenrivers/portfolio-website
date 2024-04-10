@@ -5,7 +5,7 @@ import ProjectCarousel from "./ProjectCarousel.jsx";
 export default function HomePage() {
   return (
     <div>
-      <section className="h-svh">
+      <section className="h-svh sm:h-fit">
         {/* Intro Hero Section */}
         <div className="mt-36 p-10">
           <h2 className="text-6xl font-extrabold font-playfair-display">
@@ -21,7 +21,7 @@ export default function HomePage() {
         </p>
       </section>
 
-      <section className="h-svh">
+      <section className="h-svh sm:h-fit sm:pt-20">
         {/* About Section */}
         <p className="px-10 text-justify font-roboto">
           Based in Cambridgeshire, I&apos;ve discovered a love for coding over
@@ -40,15 +40,15 @@ export default function HomePage() {
         <TeckStack />
       </section>
 
-      <section className="h-svh">
+      <section className="h-svh sm:h-fit sm:pt-10 sm:px-10">
         {/* Project Overview Section */}
-        <h2 className="px-10 text-2xl font-bold font-playfair-display">
+        <h2 className="px-10 sm:p-0 text-2xl font-bold font-playfair-display">
           Previous Projects
         </h2>
         <ProjectCarousel />
       </section>
 
-      <section className="h-svh">
+      <section className="h-svh sm:h-fit sm:pt-10">
         {/* Contact Section */}
         <h2 className="px-10 text-2xl font-bold font-playfair-display">
           Contact Me

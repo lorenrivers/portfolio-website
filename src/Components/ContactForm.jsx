@@ -63,7 +63,7 @@ export default function ContactForm() {
       />
       <button
         type="submit"
-        className="bg-indigo-950 text-white p-4 w-fit self-center rounded-xl m-2 hover:bg-indigo-950/75"
+        className="bg-indigo-950 text-white p-4 w-fit self-center rounded-xl m-2 hover:bg-indigo-950/75 "
       >
         Submit
       </button>
