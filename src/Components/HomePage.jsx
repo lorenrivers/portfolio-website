@@ -1,29 +1,28 @@
 import TeckStack from "./TechStack";
 import ContactForm from "./ContactForm.jsx";
-import ProjectCarousel from "./ProjectCarousel.jsx";
+// import ProjectCarousel from "./ProjectCarousel.jsx";
+import ProjectTiles from "./ProjectTiles.jsx";
 
 export default function HomePage() {
   return (
     <div>
-      <section className="h-svh sm:h-fit">
+      <section className="h-5/6 sm:h-fit bg-teal-600 text-white ">
         {/* Intro Hero Section */}
-        <div className="mt-36 p-10">
-          <h2 className="text-6xl font-extrabold font-playfair-display">
-            Hi 👋
-          </h2>
-          <h2 className="text-5xl font-extrabold font-playfair-display">
+        <div className="mt-36 p-10 sm:px-10 sm:pb-10 sm:pt-40">
+          <h2 className="text-6xl font-extrabold font-roboto">Hi 👋</h2>
+          <h2 className="text-5xl font-extrabold font-roboto">
             I&apos;m Loren, <span>a fullstack web developer</span>
           </h2>
         </div>
-        <p className="px-10 font-bold font-roboto">
+        <p className="px-10 p-10 font-bold font-roboto">
           Coding bootcamp graduate, with aspirations to one day work as a Junior
           Web Developer.
         </p>
       </section>
 
-      <section className="h-svh sm:h-fit sm:pt-20">
+      <section className="h-5/6 sm:h-fit sm:pt-20">
         {/* About Section */}
-        <p className="px-10 text-justify font-roboto">
+        <p className="px-10 pt-10 text-justify font-roboto">
           Based in Cambridgeshire, I&apos;ve discovered a love for coding over
           the last year. My aspirations are to continue to develop my skills in
           this area and create professional web applications that have great
@@ -40,17 +39,14 @@ export default function HomePage() {
         <TeckStack />
       </section>
 
-      <section className="h-svh sm:h-fit sm:pt-10 sm:px-10">
+      <section className="h-4/6 sm:h-fit pt-10 sm:px-10">
         {/* Project Overview Section */}
-        <h2 className="px-10 sm:p-0 text-2xl font-bold font-playfair-display">
-          Previous Projects
-        </h2>
-        <ProjectCarousel />
+        <ProjectTiles />
       </section>
 
-      <section className="h-svh sm:h-fit sm:pt-10">
+      <section className="h-5/6 sm:h-fit pt-10">
         {/* Contact Section */}
-        <h2 className="px-10 text-2xl font-bold font-playfair-display">
+        <h2 className="px-10 text-3xl font-bold font-playfair-display text-teal-800">
           Contact Me
         </h2>
         <p className="px-10 py-5 text-justify font-roboto">

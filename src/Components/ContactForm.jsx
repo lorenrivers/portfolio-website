@@ -39,7 +39,7 @@ export default function ContactForm() {
         placeholder="Your Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        className="bg-indigo-50 p-2 rounded-xl m-1"
+        className="bg-teal-50 p-2 rounded-xl m-1"
         required
       />
       <input
@@ -47,7 +47,7 @@ export default function ContactForm() {
         placeholder="Your Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="bg-indigo-50 p-2 rounded-xl m-1"
+        className="bg-teal-50 p-2 rounded-xl m-1"
         required
       />
 
@@ -58,12 +58,12 @@ export default function ContactForm() {
         placeholder="Message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        className="bg-indigo-50 p-2 rounded-xl m-1"
+        className="bg-teal-50 p-2 rounded-xl m-1"
         required
       />
       <button
         type="submit"
-        className="bg-indigo-950 text-white p-4 w-fit self-center rounded-xl m-2 hover:bg-indigo-950/75 "
+        className="bg-teal-950 text-white p-4 w-fit self-center rounded-xl m-2 hover:bg-teal-950/75 "
       >
         Submit
       </button>
