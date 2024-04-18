@@ -33,40 +33,49 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col px-10 py-5">
-      <input
-        type="text"
-        placeholder="Your Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        className="bg-teal-50 p-2 rounded-xl m-1"
-        required
-      />
-      <input
-        type="email"
-        placeholder="Your Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        className="bg-teal-50 p-2 rounded-xl m-1"
-        required
-      />
+    <>
+      <h2 className="px-10 text-3xl font-bold font-roboto text-teal-800">
+        Contact Me
+      </h2>
+      <p className="px-10 py-5 text-justify font-roboto">
+        I&apos;m happy to hear any feedback on my projects, or open to
+        collaboration on work. Drop me a message below to chat!
+      </p>
+      <form onSubmit={handleSubmit} className="flex flex-col px-10 py-5">
+        <input
+          type="text"
+          placeholder="Your Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          className="bg-teal-50 p-2 rounded-xl m-1"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="bg-teal-50 p-2 rounded-xl m-1"
+          required
+        />
 
-      <textarea
-        rows="5"
-        cols="40"
-        type="text"
-        placeholder="Message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        className="bg-teal-50 p-2 rounded-xl m-1"
-        required
-      />
-      <button
-        type="submit"
-        className="bg-teal-950 text-white p-4 w-fit self-center rounded-xl m-2 hover:bg-teal-950/75 "
-      >
-        Submit
-      </button>
-    </form>
+        <textarea
+          rows="5"
+          cols="40"
+          type="text"
+          placeholder="Message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          className="bg-teal-50 p-2 rounded-xl m-1"
+          required
+        />
+        <button
+          type="submit"
+          className="bg-teal-950 text-white p-4 w-fit self-center rounded-xl m-2 hover:bg-teal-950/75 "
+        >
+          Submit
+        </button>
+      </form>
+    </>
   );
 }

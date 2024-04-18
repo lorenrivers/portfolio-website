@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function ProjectTiles() {
   return (
@@ -13,12 +13,15 @@ export default function ProjectTiles() {
         <div className="card-body">
           <h2 className="card-title">Flavor.Voyage</h2>
           <div className="card-actions justify-end">
-            <button className="bg-teal-600 text-white p-4 w-fit self-center rounded-xl m-2 hover:bg-teal-950/75 ">
-              Read More
-            </button>
+            <Link to="/portfolio">
+              <button className="bg-teal-600 text-white p-4 w-fit self-center rounded-xl m-2 hover:bg-teal-950/75 ">
+                Read More
+              </button>
+            </Link>
           </div>
         </div>
       </div>
+
       <div className="card w-96 bg-base-100 shadow-xl image-full">
         <figure>
           <img
@@ -29,12 +32,15 @@ export default function ProjectTiles() {
         <div className="card-body">
           <h2 className="card-title">Taste Trekkers</h2>
           <div className="card-actions justify-end">
-            <button className="bg-teal-600 text-white p-4 w-fit self-center rounded-xl m-2 hover:bg-teal-950/75 ">
-              Read More
-            </button>
+            <Link to="/portfolio">
+              <button className="bg-teal-600 text-white p-4 w-fit self-center rounded-xl m-2 hover:bg-teal-950/75 ">
+                Read More
+              </button>
+            </Link>
           </div>
         </div>
       </div>
+
       <div className="card w-96 bg-base-100 shadow-xl image-full">
         <figure>
           <img
@@ -45,9 +51,11 @@ export default function ProjectTiles() {
         <div className="card-body">
           <h2 className="card-title">Cookie Clicker</h2>
           <div className="card-actions justify-end">
-            <button className="bg-teal-600 text-white p-4 w-fit self-center rounded-xl m-2 hover:bg-teal-950/75 ">
-              Read More
-            </button>
+            <Link to="/portfolio">
+              <button className="bg-teal-600 text-white p-4 w-fit self-center rounded-xl m-2 hover:bg-teal-950/75 ">
+                Read More
+              </button>
+            </Link>
           </div>
         </div>
       </div>

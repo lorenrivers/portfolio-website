@@ -46,13 +46,6 @@ export default function HomePage() {
 
       <section className="h-5/6 sm:h-fit pt-10">
         {/* Contact Section */}
-        <h2 className="px-10 text-3xl font-bold font-playfair-display text-teal-800">
-          Contact Me
-        </h2>
-        <p className="px-10 py-5 text-justify font-roboto">
-          I&apos;m happy to hear any feedback on my projects, or open to
-          collaboration on work. Drop me a message below to chat!
-        </p>
         <ContactForm />
       </section>
     </div>

@@ -4,14 +4,14 @@ export const projects = [
     urlLink: "https://react-cookie-clicker-nine.vercel.app/",
     gitHubLink: "https://github.com/lorenrivers/react-cookie-clicker",
     techStack: ["React", "Vite", "CSS"],
-    screenshot: "../public/react-cookie-clicker.png",
+    screenshot: "/react-cookie-clicker.png",
   },
   {
     title: "Taste Trekkers",
     urlLink: "https://restaurant-guide-project.vercel.app/",
     gitHubLink: "https://github.com/lorenrivers/restaurant-guide-project",
     techStack: ["Next.js", "PostgreSQL", "CSS"],
-    screenshot: "../public/taste-trekkers.png",
+    screenshot: "/taste-trekkers.png",
   },
   {
     title: "Flavor.Voyage",
@@ -24,6 +24,6 @@ export const projects = [
       "Supabase",
       "Clerk Authentication",
     ],
-    screenshot: "../public/flavor-voyage.png",
+    screenshot: "/flavor-voyage.png",
   },
 ];
