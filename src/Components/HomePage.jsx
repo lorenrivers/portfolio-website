@@ -1,6 +1,5 @@
 import TeckStack from "./TechStack";
 import ContactForm from "./ContactForm.jsx";
-// import ProjectCarousel from "./ProjectCarousel.jsx";
 import ProjectTiles from "./ProjectTiles.jsx";
 
 export default function HomePage() {

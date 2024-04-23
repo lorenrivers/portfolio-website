@@ -16,6 +16,7 @@ export default function Portfolio() {
           gitHub={project.gitHubLink}
           techStack={project.techStack}
           screenshot={project.screenshot}
+          description={project.description}
         />
       ))}
     </div>

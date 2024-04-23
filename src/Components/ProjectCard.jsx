@@ -4,6 +4,7 @@ export default function ProjectCard({
   gitHub,
   techStack,
   screenshot,
+  description,
 }) {
   const techStackArray = techStack.map((tech) => <li key={tech.id}>{tech}</li>);
 
@@ -21,20 +22,24 @@ export default function ProjectCard({
           {title}
         </h2>
 
+        <p className="mx-2 mb-2 text-justify font-roboto">{description}</p>
+
         <a href={url}>
-          <button className="bg-teal-950 text-white p-4 m-2 w-fit self-center rounded-xl hover:bg-teal-950/75">
+          <button className="bg-teal-950 text-white p-4 m-2 w-fit self-center rounded-xl hover:bg-teal-950/75 font-roboto">
             Live link to project
           </button>
         </a>
 
         <a href={gitHub}>
-          <button className="bg-teal-950 text-white p-4 m-2 w-fit self-center rounded-xl hover:bg-teal-950/75">
+          <button className="bg-teal-950 text-white p-4 m-2 w-fit self-center rounded-xl hover:bg-teal-950/75 font-roboto">
             See the GitHub code
           </button>
         </a>
 
-        <h3 className="text-xl font-semibold ml-2 my-2">Tech stack used:</h3>
-        <ul className="ml-2">{techStackArray}</ul>
+        <h3 className="text-xl font-semibold ml-2 my-2 font-roboto">
+          Tech stack used:
+        </h3>
+        <ul className="ml-2 font-roboto">{techStackArray}</ul>
       </div>
     </div>
   );
