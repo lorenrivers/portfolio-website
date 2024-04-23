@@ -23,7 +23,7 @@ export default function ProjectCard({
 
         <a href={url}>
           <button className="bg-teal-950 text-white p-4 m-2 w-fit self-center rounded-xl hover:bg-teal-950/75">
-            Link link to project
+            Live link to project
           </button>
         </a>
 

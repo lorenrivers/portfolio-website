@@ -1,8 +1,16 @@
-# React + Vite
+Welcome to my personal porfolio website!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features:
 
-Currently, two official plugins are available:
+- Find live links to my projects, as well as the technologies used.
+- View my current skill set and a short bio.
+- Contact me via the provided form.
+- Responsive and user-friendly interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used:
+
+- React: A free and open-source front-end JavaScript library for building user interfaces based on components.
+- react-router-dom: An npm package that enables the implementation of dynamic routing in a web app.
+- EmailJS: A service that allows emails to be sent using client-side technologies.
+- Tailwind CSS: A utility-first CSS framework for rapidly building custom user interfaces.
+- Daisy UI: A component library for Tailwind CSS.
