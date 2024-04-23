@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function ProjectTiles() {
   return (
-    <div className="flex flex-col sm:flex-row gap-4 px-10 ">
-      <div className="card w-96 bg-base-100 shadow-xl image-full">
+    <div className="flex flex-col sm:flex-row gap-4 min-[400px]:pl-10">
+      <div className="card w-96 bg-base-100 shadow-xl image-full ">
         <figure>
           <img
             src="/flavor-voyage.png"

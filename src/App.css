@@ -1,0 +1,22 @@
+.gradient-background {
+  background: linear-gradient(300deg, #088072, #12ccb6, #053c35);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ease: increases in velocity towards the middle of the animation, slowing back down at the end. */
+/* infinite: this is the iteration count (plays forever) */
+/* background-position: first value defines x and second value defines y. 0% means that the left (or top) edge of background image will be aligned with left (or top) edge of container. */
+/* @keyframes: creates animation by gradually changing from one set of rules to another. Specify when style change will happen in % (0% is the beginning of animation, 100% is the end) */
