@@ -9,9 +9,9 @@ export default function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceId = import.meta.env.VITE_SERVICE_ID;
-    const templateId = import.meta.env.VITE_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+    const serviceId = "service_h3lj3rk";
+    const templateId = "template_1nalism";
+    const publicKey = "pReQoce0qBNkPR37-";
 
     const templateParams = {
       user_name: name,
