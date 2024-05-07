@@ -14,7 +14,7 @@ export const projects = [
       "A full-stack web application where users can upload a post, assign it a category and delete the post. Users can leave a comment/review under each individual restaurant post.",
     urlLink: "https://restaurant-guide-project.vercel.app/",
     gitHubLink: "https://github.com/lorenrivers/restaurant-guide-project",
-    techStack: ["Next.js", "vercel/postgres", "CSS", "framer-motion"],
+    techStack: ["Next.js", "Vercel/Postgres", "CSS", "framer-motion"],
     screenshot: "/taste-trekkers.png",
   },
   {

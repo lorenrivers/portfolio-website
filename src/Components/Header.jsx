@@ -28,17 +28,17 @@ export default function Header() {
         <h1 className="font-roboto font-bold text-xl">Loren Rivers</h1>
         <nav className="flex gap-5">
           <Link to="/">
-            <span className="font-roboto font-bold text-xl underline decoration-transparent hover:decoration-indigo-700 hover:text-indigo-700 hover:transition-colors hover:duration-300">
+            <span className="font-roboto font-bold text-xl underline decoration-transparent hover:decoration-teal-700 hover:text-teal-700 hover:transition-colors hover:duration-300">
               Home
             </span>
           </Link>
           <Link to="/portfolio">
-            <span className="font-roboto font-bold text-xl underline decoration-transparent hover:decoration-indigo-700 hover:text-indigo-700 hover:transition-colors hover:duration-300">
+            <span className="font-roboto font-bold text-xl underline decoration-transparent hover:decoration-teal-700 hover:text-teal-700 hover:transition-colors hover:duration-300">
               Portfolio
             </span>
           </Link>
           <Link to="/contact">
-            <span className="font-roboto font-bold text-xl underline decoration-transparent hover:decoration-indigo-700 hover:text-indigo-700 hover:transition-colors hover:duration-300">
+            <span className="font-roboto font-bold text-xl underline decoration-transparent hover:decoration-teal-700 hover:text-teal-700 hover:transition-colors hover:duration-300">
               Contact
             </span>
           </Link>
